@@ -8,76 +8,34 @@ var cookieShop1 = {
   maxCust: 65,
   avgCookieSale: 6.3,
   avgCustPerHour: [],
+  cookieSoldPH: [],
   randAvgCustPerHour: function(){
-    for(var i = 0;i < hours.length;i++){
+    for(var i = 0;i < hours.length; i++){
       this.avgCustPerHour.push(Math.floor((Math.random() * (this.maxCust - this.minCust ) + 1)));
       console.log(this.avgCustPerHour[i]);
+    }
+  },
+  randAvgCkePerHour: function(){
+    for(var j = 0; j < hours.length;j++){
+      this.cookieSoldPH.push(Math.round(this.avgCookieSale * this.avgCustPerHour[j]));
+      console.log(this.randAvgCkePerHour);
+    }
+  },
+  renderFunct: function(){
+    var store1 = document.getElementById('store1');
+    var firstandpike = document.getElementById('firstandpike');
+    this.randAvgCustPerHour();
+    this.randAvgCkePerHour();
+    var h3El = document.createElement('h3');
+    h3El.textContent = this.location;
+    store1.appendChild(h3El);
+    for(var k = 0; k < hours.length; k++){
+      var liEl = document.createElement('li');
+      liEl.textContent = hours[k] + ': ' + this.cookieSoldPH[k] + ' cookies';
+      console.log(liEl);
+      firstandpike.appendChild(liEl);
     }
   }
 };
 
-cookieShop1;
-
-var cookieShop2 = {
-  location: 'Seatac Airport',
-  minCust: 3,
-  maxCust: 24,
-  avgCookieSale: 1.2,
-  avgCustPerHour: [],
-  randAvgCustPerHour: function(){
-    for(var i = 0;i < hours.length;i++){
-      this.avgCustPerHour.push(Math.floor((Math.random() * (this.maxCust - this.minCust ) + 1)));
-      console.log(this.avgCustPerHour[i]);
-    }
-  }
-};
-
-cookieShop2;
-
-var cookieShop3 = {
-  location: 'Seattle Center',
-  minCust: 11,
-  maxCust: 38,
-  avgCookieSale: 3.7,
-  avgCustPerHour: [],
-  randAvgCustPerHour: function(){
-    for(var i = 0;i < hours.length;i++){
-      this.avgCustPerHour.push(Math.floor((Math.random() * (this.maxCust - this.minCust ) + 1)));
-      console.log(this.avgCustPerHour[i]);
-    }
-  }
-};
-
-cookieShop3;
-
-var cookieShop4 = {
-  location: 'Capitol Hill',
-  minCust: 20,
-  maxCust: 38,
-  avgCookieSale: 2.3,
-  avgCustPerHour: [],
-  randAvgCustPerHour: function(){
-    for(var i = 0;i < hours.length;i++){
-      this.avgCustPerHour.push(Math.floor((Math.random() * (this.maxCust - this.minCust ) + 1)));
-      console.log(this.avgCustPerHour[i]);
-    }
-  }
-};
-
-cookieShop4;
-
-var cookieShop5 = {
-  location: 'Alki',
-  minCust: 2,
-  maxCust: 16,
-  avgCookieSale: 4.6,
-  avgCustPerHour: [],
-  randAvgCustPerHour: function(){
-    for(var i = 0;i < hours.length;i++){
-      this.avgCustPerHour.push(Math.floor((Math.random() * (this.maxCust - this.minCust ) + 1)));
-      console.log(this.avgCustPerHour[i]);
-    }
-  }
-};
-
-cookieShop5;
+cookieShop1.renderFunct();

@@ -1,6 +1,6 @@
 
 body{
-  background-color:#551B14;
+  background-color:pink;
   padding:0;
 }
 
@@ -11,4 +11,7 @@ body{
 
 #header{
 background-color: #B59DA4;
+}
+#cookiestands{
+  border-style: solid;
 }

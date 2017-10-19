@@ -60,12 +60,12 @@ function buildStores(hours){
   var tdEl = document.createElement('td');
   tdEl.textContent = allLocations[0].location;
   trEl.appendChild(tdEl);
+  cookieStands.appendChild(trEl);
   for(var l = 0; l < hours.length; l++){
     var tdEl = document.createElement('td');
-    tdEl.textContent = allLocations[l].cookieSoldPH;
+    tdEl.textContent = cookieSoldPH[l];
     trEl.appendChild(tdEl);
-  }
-  cookieStands.appendChild(trEl);
+
   /*function makeRowData(){
     for(var l = 0;l < data.length; l++){
       var tdEl = document.createElement('td');
@@ -75,4 +75,4 @@ function buildStores(hours){
   }*/
   //cookieStands.appendChild(trEl);
 }
-buildStores(allLocations);
+buildStores();

@@ -39,9 +39,9 @@ var makeStores = function(){
 makeStores();
 
 function makeHeaderRow(){
-  var cookieStands = document.getElementById('cookiestands');
+  var cookiestands = document.getElementById('cookiestands');
   var trEl = document.createElement('tr');
-  var thEl = document.createElement('td');
+  var thEl = document.createElement('th');
   thEl.textContent = 'Availability';
   trEl.appendChild(thEl);
 
@@ -50,29 +50,6 @@ function makeHeaderRow(){
     thEl.textContent = hours[k];
     trEl.appendChild(thEl);
   }
-  cookieStands.appendChild(trEl);
+  cookiestands.appendChild(trEl);
 }
 makeHeaderRow();
-
-function buildStores(hours){
-  var cookieStands = document.getElementById('cookiestands');
-  var trEl = document.createElement('tr');
-  var tdEl = document.createElement('td');
-  tdEl.textContent = allLocations[0].location;
-  trEl.appendChild(tdEl);
-  cookieStands.appendChild(trEl);
-  for(var l = 0; l < hours.length; l++){
-    var tdEl = document.createElement('td');
-    tdEl.textContent = cookieSoldPH[l];
-    trEl.appendChild(tdEl);
-
-  /*function makeRowData(){
-    for(var l = 0;l < data.length; l++){
-      var tdEl = document.createElement('td');
-      tdEl.textContent = data.indexOf[l]();
-      trEl.appendChild(tdEl);
-    }
-  }*/
-  //cookieStands.appendChild(trEl);
-}
-buildStores();

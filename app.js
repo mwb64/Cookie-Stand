@@ -3,7 +3,7 @@
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 var allLocations = [];
-var cookieSoldPH = [];
+var cookieSoldPH = 0;
 var cookieSoldPD = 0;
 
 function Store (location,minCust,maxCust,avgCookeSales){
@@ -24,8 +24,8 @@ function Store (location,minCust,maxCust,avgCookeSales){
   this.randAvgCustPerHour();
   this.randAvgCkePerHour = function(){
     for(var j = 0; j < hours.length;j++){
-      this.cookieSoldPH.push(Math.round(this.avgCookieSale * this.avgCustPerHour[j]));
-      console.log(this.cookieSoldPH[0]);
+      return Math.round(this.avgCookieSale * this.avgCustPerHour[j]);
+      
     };
   };
   this.randAvgCkePerHour();

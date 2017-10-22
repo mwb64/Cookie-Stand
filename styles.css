@@ -1,7 +1,6 @@
 
 body{
   background-color:pink;
-  padding:0;
 }
 
 #storeTitle{
@@ -14,4 +13,8 @@ background-color: #B59DA4;
 }
 #cookiestands{
   border-style: solid;
+}
+img{
+  width: 50px;
+  height: 25px;
 }

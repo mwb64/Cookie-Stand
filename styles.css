@@ -1,0 +1,20 @@
+
+body{
+  background-color:pink;
+}
+
+#storeTitle{
+  vertical-align: middle;
+  text-align: center;
+}
+
+#header{
+background-color: #B59DA4;
+}
+#cookiestands{
+  border-style: solid;
+}
+img{
+  width: 50px;
+  height: 25px;
+}

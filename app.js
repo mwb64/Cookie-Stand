@@ -10,7 +10,6 @@ var firstAndPike = {
   avgCustPerHour: [],
   cookieSoldPH: [],
   cookieSoldPD: 0,
-  console.log(cookieSoldPD),
   randAvgCustPerHour: function(){
     for(var i = 0;i < hours.length; i++){
       this.avgCustPerHour.push(Math.floor((Math.random() * (this.maxCust - this.minCust ) + 1)));

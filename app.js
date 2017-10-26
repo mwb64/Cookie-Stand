@@ -9,7 +9,8 @@ var firstAndPike = {
   avgCookieSale: 6.3,
   avgCustPerHour: [],
   cookieSoldPH: [],
-  cookieSoldPD: [Total],
+  cookieSoldPD: 0,
+  console.log(cookieSoldPD),
   randAvgCustPerHour: function(){
     for(var i = 0;i < hours.length; i++){
       this.avgCustPerHour.push(Math.floor((Math.random() * (this.maxCust - this.minCust ) + 1)));
@@ -21,6 +22,13 @@ var firstAndPike = {
       this.cookieSoldPH.push(Math.round(this.avgCookieSale * this.avgCustPerHour[j]));
       console.log(this.randAvgCkePerHour);
     }
+  },
+  totcookieSoldPD: function(){
+    var total = 0;
+    for(var i = 0; i < hours.length;i++){
+      sum += this.cookieSoldPH[i];
+    }
+    this.cookieSoldPD = sum;
   },
 
   renderFunct: function(){

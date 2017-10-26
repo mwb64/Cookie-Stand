@@ -10,5 +10,13 @@ body{
 }
 
 #header{
-background-color: #B59DA4;
+  background-color: #B59DA4;
+}
+div{
+  border-bottom: solid black;
+  display: inline-table;
+}
+h1{
+  text-align: center;
+  text-align: center;
 }

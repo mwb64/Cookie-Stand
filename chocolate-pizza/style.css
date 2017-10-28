@@ -1,0 +1,84 @@
+/**{
+  border: solid black;
+}*/
+
+header {
+  border-bottom: double 13px;
+  padding-bottom: 2%;
+}
+
+#smallLogo {
+  vertical-align: baseline;
+  border: dashed   black;
+  /*padding-top: 0;
+  margin-top: 0;*/
+}
+#delDiv {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+
+}
+.delText {
+font-family: 'Pacifico', cursive;
+font-style: italic;
+padding-bottom: 0px;
+margin-bottom: 0px;
+display:  block;
+}
+.subText {
+  padding-top: 0px;
+  margin-top: 0px;
+  display: inline-block;
+  color: grey;
+}
+.logoList {
+display: inline-block;
+text-decoration: none;
+list-style: none;
+margin-left: 0;
+padding-left: 0;
+float: right;
+}
+.logoIcon{
+  display: inline;
+}
+h1{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#printIcon{
+  float: right;
+  display: inline-block;
+}
+.ingre {
+  margin-top: 2px;
+  padding-top: 4px;
+  display: inline-block;
+  padding-left: 1px;
+  width: 25%;
+}
+
+#ingreList {
+  background-image: url('https://github.com/codefellows/seattle-201n9/blob/master/class-10-js_debugging-wireframe_part_2/lab/lab-assets/list-bg.png?raw=true');
+  height: auto;
+}
+#vanessa {
+  vertical-align: baseline;
+
+}
+footer{
+  color: grey;
+  display: block;
+  border-top: solid grey;
+}
+#footerLogo {
+  margin-left: 50%;
+  margin-top: -18px;
+  padding-top: -5px;
+}
+body {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
